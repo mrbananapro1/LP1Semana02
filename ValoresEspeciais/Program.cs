@@ -1,0 +1,12 @@
+﻿using System;
+
+namespace ValoresEspeciais
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine($"byte: mínimo = {byte.MinValue}, máximo = {byte.MaxValue}");
+        }
+    }
+}

@@ -18,7 +18,6 @@ namespace Cilindro
 
             Console.WriteLine($"O volume é: {volume}")
             Console.WriteLine($"A área é: {area}")
-            a
         }
     }
 }

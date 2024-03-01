@@ -13,7 +13,10 @@ namespace ValoresEspeciais
             Console.WriteLine($"decimal: mínimo = {decimal.MinValue}, máximo = {decimal.MaxValue}");
             Console.WriteLine($"char: mínimo = {(int)char.MinValue}, máximo = {(int)char.MaxValue}");
             Console.WriteLine($"bool: mínimo = {bool.FalseString}, máximo = {bool.TrueString}");
-            
+
+
+        uint overflow = maxValue + 1;
+        Console.WriteLine($"overflow uint: {overflow}");
 
         }
     }

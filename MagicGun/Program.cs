@@ -1,18 +1,40 @@
 ﻿using System;
 
-namespace MagicGun
+namespace BreakContinue
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            string shots;
+            
+            Console.Write("How many shots");
+            shots = Console.ReadLine();
+            int shotsx = int.Parse(shots);
+            int rounds = 1;
+            while (true)
+            {
+                rounds++;
 
-            string n;
+                // Ends loop if we're over the maximum number of turns
+                if (shotsx > rounds)
+                {
+                    break;
+                }
 
-            Console.WriteLine("Give me a number of bullets for the MagicGun");
-            n = Console.ReadLine();
+        // Skips current cycle if current turn is divisible by 3 or equal to 10
+                if (rounds % 3 == 0 || rounds == 10)
+                {
+                    continue;
+                }
 
+                // Print turn number
+                Console.WriteLine("Normal fire :/");
+            }
 
+            // Print number of last turn
+            Console.WriteLine($"Last turn was {rounds}");
         }
     }
 }
+

@@ -18,6 +18,11 @@ namespace ValoresEspeciais
         uint overflow = maxValue + 1;
         Console.WriteLine($"overflow uint: {overflow}");
 
+        float overflowfloat = maxValue + 1.0;
+        Console.WriteLine($"overflow float: {overflowfloat}");
+        
+
+
         }
     }
 }

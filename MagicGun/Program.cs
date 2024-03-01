@@ -11,35 +11,41 @@ namespace BreakContinue
             Console.Write("How many shots: ");
             shots = Console.ReadLine();
             int shotsx = int.Parse(shots);
-            int rounds = 1;
-            while (true)
+            for (int rounds = 1; rounds <= shotsx; rounds++)
             {
-                rounds++;
 
 
-                if (shotsx % 3 == 0 && shotsx % 5 == 0)
+                if (rounds % 3 == 0 && rounds % 5 == 0)
                 {
-                    Console.WriteLine($"{shots}: Magic Fire! Electric Fire!");
+                    Console.WriteLine($"{rounds}: Magic Fire! Electric Fire!");
+                    continue;
                 }
 
 
-                if (shotsx % 3 == 0)
+                else if (rounds % 3 == 0)
                 {
-                    Console.WriteLine($"{shots}: Magic Fire!");
+                    Console.WriteLine($"{rounds}: Magic Fire!");
+                    
                 }
 
-                if (shotsx % 5 == 0)
+                else if (rounds % 5 == 0) 
                 {
-                    Console.WriteLine($"{shots}: Electric Fire!");
+                    Console.WriteLine($"{rounds}: Electric Fire!");
+                    
                 }
 
-                // Print turn number
-                Console.WriteLine("Normal fire :/");
+                else
+                {
+                    Console.WriteLine($"{rounds}: Normal fire :/");
+                }
+                }
+                
+                
             }
 
-            // Print number of last turn
-            Console.WriteLine($"Last turn was {rounds}");
+ 
+            
         }
     }
-}
+
 

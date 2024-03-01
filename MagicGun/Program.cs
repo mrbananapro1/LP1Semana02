@@ -8,7 +8,7 @@ namespace BreakContinue
         {
             string shots;
             
-            Console.Write("How many shots");
+            Console.Write("How many shots: ");
             shots = Console.ReadLine();
             int shotsx = int.Parse(shots);
             int rounds = 1;
@@ -16,16 +16,21 @@ namespace BreakContinue
             {
                 rounds++;
 
-                // Ends loop if we're over the maximum number of turns
-                if (shotsx > rounds)
+
+                if (shotsx % 3 == 0 && shotsx % 5 == 0)
                 {
-                    break;
+                    Console.WriteLine($"{shots}: Magic Fire! Electric Fire!");
                 }
 
-        // Skips current cycle if current turn is divisible by 3 or equal to 10
-                if (rounds % 3 == 0 || rounds == 10)
+
+                if (shotsx % 3 == 0)
                 {
-                    continue;
+                    Console.WriteLine($"{shots}: Magic Fire!");
+                }
+
+                if (shotsx % 5 == 0)
+                {
+                    Console.WriteLine($"{shots}: Electric Fire!");
                 }
 
                 // Print turn number

@@ -8,7 +8,8 @@ namespace ValoresEspeciais
         {
             Console.WriteLine($"byte: mínimo = {byte.MinValue}, máximo = {byte.MaxValue}");
             Console.WriteLine($"int: mínimo = {int.MinValue}, máximo = {int.MaxValue}");
-            ã
+            Console.WriteLine($"float: mínimo = {float.MinValue}, máximo = {float.MaxValue}");
+            
         }
     }
 }

@@ -20,6 +20,9 @@ namespace ValoresEspeciais
 
         float overflowfloat = maxValue + 1.0;
         Console.WriteLine($"overflow float: {overflowfloat}");
+
+        float overflowfloatm = minValue - 1.0;
+        Console.WriteLine($"overflow float: {overflowfloatm}");
         
 
 

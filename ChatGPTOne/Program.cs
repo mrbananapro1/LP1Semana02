@@ -10,5 +10,8 @@ namespace ChatGPTOne
             Console.Write("Insira uma questão ou escreva 'EXIT' para sair: ");
             string question = Console.ReadLine();
 
-    }
+            if (question.ToUpper() == "EXIT")
+            {
+                break;
+            }
 }

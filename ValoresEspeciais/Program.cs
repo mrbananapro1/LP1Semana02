@@ -11,6 +11,7 @@ namespace ValoresEspeciais
             Console.WriteLine($"float: mínimo = {float.MinValue}, máximo = {float.MaxValue}");
             Console.WriteLine($"decimal: mínimo = {decimal.MinValue}, máximo = {decimal.MaxValue}");
             Console.WriteLine($"char: mínimo = {(int)char.MinValue}, máximo = {(int)char.MaxValue}");
+                    Console.WriteLine($"bool: mínimo = {bool.FalseString}, máximo = {bool.TrueString}");
             
         }
     }

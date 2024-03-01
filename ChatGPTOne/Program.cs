@@ -1,17 +1,53 @@
 ﻿using System;
+using System.Formats.Asn1;
 
 namespace ChatGPTOne
 {
     class Program
     {
         static void Main(string[] args)
-        while (true)
         {
-            Console.Write("Insira uma questão ou escreva 'EXIT' para sair: ");
-            string question = Console.ReadLine();
+            //strings
+            string question, answer;
+            //loop
 
-            if (question.ToUpper() == "EXIT")
+            do
             {
-                break;
-            }
+                Console.Write("What can i help you with today: ");
+                question = Console.ReadLine();
+
+                switch (question)
+                {
+                    case "Who are you?":
+                        answer = "A program made by a very handsome man";
+                        break;
+
+                    case "Where are you from?":
+                        answer = "The insides of your computer";
+                        break;
+
+                    case "Are you a paid actor?":
+                        answer = "I wouldn't say i am";
+                        break;
+
+                    case "Are we in a simulation?":
+                        answer = "You're not ready for that answer";
+                        break;
+
+                    case "EXIT":
+                        return;
+
+                    default:
+                        answer = "I'm not answering that";
+                        break;
+                    
+                }
+
+                Console.WriteLine($"ChatGPTOne: {answer}\n");
+
+            } while (true);
+
+
+        }
+    }
 }
